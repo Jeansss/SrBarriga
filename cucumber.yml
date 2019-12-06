@@ -1,0 +1,8 @@
+default: -p bdd -p chrome -p dev
+bdd: --format pretty
+json: --format json --out=log/features.json
+chrome: BROWSER=chrome
+
+#Environments
+dev: ENVIRONMENT_TYPE=dev
+uat: ENVIRONMENT_TYPE=uat
